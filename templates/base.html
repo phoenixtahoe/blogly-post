@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Blogly
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <style>
+      body{
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a href="/"><span class="navbar-brand mb-0 h1">Blogly</span></a>
+      <div>
+        <div class="nav-item">
+          <a class="nav-link mb-0" href="/users">Users</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center mt-5">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
